@@ -1,4 +1,4 @@
-## 修改Android  boot.img 文件以获取所有应用的永久debug权限
+## 修改Android ROM 中 boot.img 文件以获取所有应用的永久debug权限
 前提：手机已ROOT、安装了busyBox（最好安装，不是必须）
 
 众所周知，一个安装在手机的 release 的 app 想要可以调试，必须在其 AndroidManifest 中设置 android:debuggable="true",这样就开启了这个应用的debug权限，但是这就需要反编译->修改->重新打包->重新签名->安装 是比较麻烦的，而且如果你是反编译别人的应用， 那在这个过程中你未必会一帆风顺，那么有没有更简单的办法呢？答案当然是肯定的！
