@@ -10,12 +10,11 @@
 	
        1. 找到你刷机的时候用的刷机包ROM，一般是zip格式。然后直接解压了，拿到 boot.img 文件，这个文件其实就是启动时候的引导文件，
        就是它会把 / default.prop 的值还原的
-       2.  http://forum.xda-developers.com/showthread.php?t=2073775  下载Android.Image.Kitchen.v3.2-Win32.zip ，这个工具
-       可以把boot.img 解包、重打包。
+       2.  下载上面提供的 Android.Image.Kitchen.v3.2-Win32.zip ，这个工具可以把boot.img 解包、重打包。
        3.  使用Android.Image.Kitchen 解包 boot.img ，进入解包后的文件目录，打开 default.prop 修改 ro.debuggable=1 
        4.  使用Android.Image.Kitchen 重新打包boot.img ,然后把你新打包出来的boot.img 丢进ROM中替换之前的那个
        5.  重新压缩ROM为zip文件
-       6.  对ROM签名：这个可以自己使用命令签名， 也可以使用别人做好的已工具（蘑菇Rom助手、autosign 等都行）
+       6.  对ROM签名：这个可以自己使用命令签名， 也可以下载使用上面提供的工具 autosign.zip 
        7.  好了，使用上面重新打包好的ROM再刷一次机吧
 
 
